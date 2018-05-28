@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import os
+import re
+import argparse
+
+p = argparse.ArgumentParser()
+p.add_argument('--input', required=True, dest='input_folder')
+p.add_argument('--output', required=True, dest='output_folder')
+args = p.parse_args()
+
+# execute annotator
+os.system('java -jar /usr/local/*-standalone.jar "{}" "{}"'.format(args.input_folder, args.output_folder))

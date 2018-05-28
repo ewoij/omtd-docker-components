@@ -1,0 +1,8 @@
+PACKAGE item_event_annotator;
+
+WORDLIST eventList = 'event_list.txt';
+
+Document{-> MARKFAST(item_event_annotator.Event, eventList)};
+
+// remove inclusions
+Item{PARTOFNEQ(item_event_annotator.Event) -> UNMARK(item_event_annotator.Event)};

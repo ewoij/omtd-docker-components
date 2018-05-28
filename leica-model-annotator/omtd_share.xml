@@ -1,0 +1,63 @@
+<componentMetadataRecord xmlns="http://www.meta-share.org/OMTD-SHARE_XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.meta-share.org/OMTD-SHARE_XMLSchema http://www.meta-share.org/OMTD-SHARE_XMLSchema/v302/OMTD-SHARE-Component.xsd">
+  <componentInfo>
+    <resourceType>component</resourceType>
+    <identificationInfo>
+      <resourceNames>
+        <resourceName>Leica Model Annotator</resourceName>
+      </resourceNames>
+      <descriptions>
+        <description>Annotates Leica Microsystems products.</description>
+      </descriptions>
+      <resourceIdentifiers>
+        <resourceIdentifier resourceIdentifierSchemeName="OMTD-docker">com.github.ewoij.omtd.leica</resourceIdentifier>
+      </resourceIdentifiers>
+      <public>false</public>
+    </identificationInfo>
+    <versionInfo>
+      <version>1.0.0</version>
+    </versionInfo>
+    <contactInfo>
+      <contactPoint>jonas.berdoz@gmail.com</contactPoint>
+      <contactType>contactEmail</contactType>
+    </contactInfo>
+    <application>true</application>
+    <functionInfo>
+      <function>http://w3id.org/meta-share/omtd-share/Annotator</function>
+    </functionInfo>
+    <distributionInfos>
+      <componentDistributionInfo>
+        <componentDistributionForm>dockerImage</componentDistributionForm>
+        <distributionLocation>ewoij/leica-annotatorTOTO:1.0.0</distributionLocation>
+        <command>annotatesTITI</command>
+      </componentDistributionInfo>
+    </distributionInfos>
+    <rightsInfo>
+      <licenceInfos>
+        <licenceInfo>
+          <licence>Apache-2.0</licence>
+        </licenceInfo>
+      </licenceInfos>
+      <rightsStatement>openAccess</rightsStatement>
+    </rightsInfo>
+    <inputContentResourceInfo>
+      <processingResourceType>corpus</processingResourceType>
+      <dataFormats>
+        <dataFormatInfo>
+          <dataFormat>http://w3id.org/meta-share/omtd-share/Xmi</dataFormat>
+        </dataFormatInfo>
+      </dataFormats>
+    </inputContentResourceInfo>
+    <outputResourceInfo>
+      <processingResourceType>corpus</processingResourceType>
+      <dataFormats>
+        <dataFormatInfo>
+          <dataFormat>http://w3id.org/meta-share/omtd-share/Xmi</dataFormat>
+        </dataFormatInfo>
+      </dataFormats>
+    </outputResourceInfo>
+    <componentCreationInfo>
+      <framework>UIMA</framework>
+      <implementationLanguage>Java</implementationLanguage>
+    </componentCreationInfo>
+  </componentInfo>
+</componentMetadataRecord>

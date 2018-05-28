@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ms:componentMetadataRecord xsi:schemaLocation="http://www.meta-share.org/OMTD-SHARE_XMLSchema http://www.meta-share.org/OMTD-SHARE_XMLSchema/v302/OMTD-SHARE-Component.xsd" xmlns:ms="http://www.meta-share.org/OMTD-SHARE_XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ms:componentInfo>
+    <ms:resourceType>component</ms:resourceType>
+    <ms:identificationInfo>
+      <ms:resourceNames>
+        <ms:resourceName>PDF Tables Extractor</ms:resourceName>
+      </ms:resourceNames>
+      <ms:descriptions>
+        <ms:description>Extracts tables form PDF as CSV files. The pages containing tables are saved as PNG.</ms:description>
+      </ms:descriptions>
+      <ms:resourceIdentifiers>
+        <ms:resourceIdentifier resourceIdentifierSchemeName="OMTD-docker">com.github.ewoij.omtd.item_event_annotator</ms:resourceIdentifier>
+      </ms:resourceIdentifiers>
+      <ms:public>false</ms:public>
+    </ms:identificationInfo>
+    <ms:versionInfo>
+      <ms:version>1.0.0</ms:version>
+    </ms:versionInfo>
+    <ms:contactInfo>
+      <ms:contactPoint>jonas.berdoz@gmail.com</ms:contactPoint>
+      <ms:contactType>contactEmail</ms:contactType>
+    </ms:contactInfo>
+    <ms:application>true</ms:application>
+    <ms:functionInfo>
+      <ms:function>http://w3id.org/meta-share/omtd-share/Annotator</ms:function>
+    </ms:functionInfo>
+    <ms:distributionInfos>
+      <ms:componentDistributionInfo>
+        <ms:componentDistributionForm>dockerImage</ms:componentDistributionForm>
+        <ms:distributionLocation>ewoij/pdf-tables-extractor:1.0.0</ms:distributionLocation>
+        <ms:command>extracts</ms:command>
+      </ms:componentDistributionInfo>
+    </ms:distributionInfos>
+    <ms:rightsInfo>
+      <ms:licenceInfos>
+        <ms:licenceInfo>
+          <ms:licence>Apache-2.0</ms:licence>
+        </ms:licenceInfo>
+      </ms:licenceInfos>
+      <ms:rightsStatement>openAccess</ms:rightsStatement>
+    </ms:rightsInfo>
+    <ms:parameterInfos>
+      <ms:parameterInfo>
+        <ms:parameterName>--output-mode</ms:parameterName>
+        <ms:parameterLabel>File System Output Layout Mode</ms:parameterLabel>
+        <ms:parameterDescription>Flat, Deep</ms:parameterDescription>
+        <ms:parameterType>string</ms:parameterType>
+        <ms:optional>true</ms:optional>
+        <ms:multiValue>false</ms:multiValue>
+      </ms:parameterInfo>
+    </ms:parameterInfos>
+    <ms:inputContentResourceInfo>
+      <ms:processingResourceType>corpus</ms:processingResourceType>
+      <ms:dataFormats>
+        <ms:dataFormatInfo>
+          <ms:dataFormat>http://w3id.org/meta-share/omtd-share/Pdf</ms:dataFormat>
+        </ms:dataFormatInfo>
+      </ms:dataFormats>
+    </ms:inputContentResourceInfo>
+    <ms:outputResourceInfo>
+      <ms:processingResourceType>corpus</ms:processingResourceType>
+      <ms:dataFormats>
+        <ms:dataFormatInfo>
+          <ms:dataFormat>http://w3id.org/meta-share/omtd-share/Xmi</ms:dataFormat>
+        </ms:dataFormatInfo>
+      </ms:dataFormats>
+    </ms:outputResourceInfo>
+    <ms:componentCreationInfo>
+      <ms:framework>UIMA</ms:framework>
+      <ms:implementationLanguage>Java</ms:implementationLanguage>
+    </ms:componentCreationInfo>
+  </ms:componentInfo>
+</ms:componentMetadataRecord>

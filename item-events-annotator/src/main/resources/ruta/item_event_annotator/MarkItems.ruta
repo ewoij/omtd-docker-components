@@ -1,0 +1,8 @@
+PACKAGE item_event_annotator;
+
+WORDTABLE itemTable = 'item_table.csv';
+
+Document{-> MARKTABLE(Item, 1, itemTable, true, 4, "", 0, "value" = 2)};
+
+// remove inclusions
+Item{PARTOFNEQ(Item) -> UNMARK(Item)};

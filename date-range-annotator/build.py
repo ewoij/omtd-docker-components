@@ -59,9 +59,9 @@ def update_omtd_schema():
     root.find('./{ns}componentInfo/{ns}distributionInfos/{ns}componentDistributionInfo/{ns}command'.format(ns=ns)).text = run_command
     root.write(omtd_shema_file)
 
-def build():
-    build_docker_image()
+def release():
     update_omtd_schema()
+    push_docker_image()
 
 if __name__ == '__main__':
     command = sys.argv[1]

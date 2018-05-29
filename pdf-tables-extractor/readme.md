@@ -2,7 +2,7 @@
 
 This is a docker image wrapper around the [PDF tables extractor](https://github.com/ewoij/pdf-tables-extractor).
 
-The docker image is following the component OpenMinTeD guidelines.
+The docker image is following the OpenMinTeD guidelines for the creation of components compatible with the platform.
 
 ## Usage
 

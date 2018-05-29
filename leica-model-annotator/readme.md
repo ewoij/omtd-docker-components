@@ -2,7 +2,7 @@
 
 This is a docker image wrapper around the [Leica Model Annotator](https://github.com/ewoij/leica-model-annotator).
 
-The docker image is following the component OpenMinTeD guidelines.
+The docker image is following the OpenMinTeD guidelines for the creation of components compatible with the platform.
 
 ## Usage
 

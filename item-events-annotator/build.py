@@ -2,7 +2,7 @@ import sys
 import os
 import xml.etree.ElementTree as ET
 
-version = '1.0.0'
+version = '1.0.1'
 docker_repository = 'ewoij/item-event-annotator'
 docker_tag = version
 docker_image = '{}:{}'.format(docker_repository, docker_tag)

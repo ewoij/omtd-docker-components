@@ -14,7 +14,7 @@
       <public>false</public>
     </identificationInfo>
     <versionInfo>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </versionInfo>
     <contactInfo>
       <contactPoint>jonas.berdoz@gmail.com</contactPoint>
@@ -27,8 +27,8 @@
     <distributionInfos>
       <componentDistributionInfo>
         <componentDistributionForm>dockerImage</componentDistributionForm>
-        <distributionLocation>ewoij/leica-annotatorTOTO:1.0.0</distributionLocation>
-        <command>annotatesTITI</command>
+        <distributionLocation>ewoij/leica-annotator:1.0.1</distributionLocation>
+        <command>annotates</command>
       </componentDistributionInfo>
     </distributionInfos>
     <rightsInfo>

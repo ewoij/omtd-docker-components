@@ -1,4 +1,4 @@
-# Date Range Annotator
+# PDF Tables Extractor
 
 This is a docker image wrapper around the [PDF tables extractor](https://github.com/ewoij/pdf-tables-extractor).
 

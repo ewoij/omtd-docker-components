@@ -14,7 +14,7 @@
       <public>false</public>
     </identificationInfo>
     <versionInfo>
-      <version>1.0.1</version>
+      <version>2.0.0</version>
     </versionInfo>
     <contactInfo>
       <contactPoint>jonas.berdoz@gmail.com</contactPoint>
@@ -27,7 +27,7 @@
     <distributionInfos>
       <componentDistributionInfo>
         <componentDistributionForm>dockerImage</componentDistributionForm>
-        <distributionLocation>ewoij/item-event-annotator:1.0.1</distributionLocation>
+        <distributionLocation>ewoij/item-event-annotator:2.0.0</distributionLocation>
         <command>annotates</command>
       </componentDistributionInfo>
     </distributionInfos>
@@ -39,24 +39,6 @@
       </licenceInfos>
       <rightsStatement>openAccess</rightsStatement>
     </rightsInfo>
-    <parameterInfos>
-      <parameterInfo>
-        <parameterName>--item-dic</parameterName>
-        <parameterLabel>Items Dictionary</parameterLabel>
-        <parameterDescription>Dictionary file used to annotate items</parameterDescription>
-        <parameterType>document</parameterType>
-        <optional>true</optional>
-        <multiValue>false</multiValue>
-      </parameterInfo>
-      <parameterInfo>
-        <parameterName>--event-list</parameterName>
-        <parameterLabel>Event List</parameterLabel>
-        <parameterDescription>List file used to annotate events.</parameterDescription>
-        <parameterType>document</parameterType>
-        <optional>true</optional>
-        <multiValue>false</multiValue>
-      </parameterInfo>
-    </parameterInfos>
     <inputContentResourceInfo>
       <processingResourceType>corpus</processingResourceType>
       <dataFormats>

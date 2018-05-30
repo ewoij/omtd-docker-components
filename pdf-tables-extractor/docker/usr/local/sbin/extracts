@@ -6,9 +6,7 @@ import argparse
 p = argparse.ArgumentParser()
 p.add_argument('--input', required=True, dest='input_folder')
 p.add_argument('--output', required=True, dest='output_folder')
-p.add_argument('--output-mode', required=False, dest='output_mode', choices=["Flat", "Deep"], default="Flat")
-
 args = p.parse_args()
 
 # execute annotator
-os.system('java -jar /usr/local/*-jar-with-dependencies.jar -i "{}" -o "{}" -m {}'.format(args.input_folder, args.output_folder, args.output_mode))
+os.system('java -jar /usr/local/*-jar-with-dependencies.jar -i "{}" -o "{}"'.format(args.input_folder, args.output_folder))

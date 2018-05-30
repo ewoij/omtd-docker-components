@@ -7,18 +7,10 @@ import shutil
 p = argparse.ArgumentParser()
 p.add_argument('--input', required=True, dest="input_dir")
 p.add_argument('--output', required=True, dest="output_dir")
-p.add_argument('--item-dic', required=False)
-p.add_argument('--event-list', required=False)
 args = p.parse_args()
 
 # directory containing annotators
 os.chdir('/usr/local')
-
-# copy lists when specified
-ruta_resources_dir = 'ruta_resources'
-os.makedirs(ruta_resources_dir, exist_ok=True)
-if args.item_dic: shutil.copy2(args.item_dic, os.path.join(ruta_resources_dir, 'item_table.csv'))
-if args.event_list: shutil.copy2(args.event_list, os.path.join(ruta_resources_dir, 'event_list.txt'))
 
 # execute annotator
 os.system('java -jar *-standalone.jar "{}" "{}"'.format(args.input_dir, args.output_dir))

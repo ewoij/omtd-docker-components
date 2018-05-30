@@ -3,7 +3,7 @@ import os
 import xml.etree.ElementTree as ET
 import urllib.request
 
-version = '2.0.1'
+version = '3.0.0'
 docker_repository = 'ewoij/pdf-tables-extractor'
 docker_tag = version
 docker_image = '{}:{}'.format(docker_repository, docker_tag)

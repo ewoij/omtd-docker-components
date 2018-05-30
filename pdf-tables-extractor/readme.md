@@ -12,11 +12,9 @@ docker run <image-name> extracts --help
 
 ```
 usage: extracts [-h] --input INPUT_FOLDER --output OUTPUT_FOLDER
-                [--output-mode {Flat,Deep}]
 
 optional arguments:
   -h, --help            show this help message and exit
   --input INPUT_FOLDER
   --output OUTPUT_FOLDER
-  --output-mode {Flat,Deep}
-``` 
+```

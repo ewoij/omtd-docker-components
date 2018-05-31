@@ -17,8 +17,7 @@ public class App
     {
     	File inputDirectory = new File(args[0]);
         File outputDirectory = new File(args[1]);
-
-		String rutaResourcesDir = "ruta_resources";
+        File rutaResourcesDirectory = new File(args[2]);
 
         SimplePipeline.runPipeline(
             CollectionReaderFactory.createReaderDescription(
@@ -27,10 +26,10 @@ public class App
             AnalysisEngineFactory.createEngineDescription(OpenNlpSegmenter.class),
             AnalysisEngineFactory.createEngineDescription(RutaEngine.class,
                 RutaEngine.PARAM_MAIN_SCRIPT, "ruta.item_event_annotator.MarkItems",
-                RutaEngine.PARAM_RESOURCE_PATHS, rutaResourcesDir),
+                RutaEngine.PARAM_RESOURCE_PATHS, rutaResourcesDirectory.toString()),
             AnalysisEngineFactory.createEngineDescription(RutaEngine.class,
                 RutaEngine.PARAM_MAIN_SCRIPT, "ruta.item_event_annotator.MarkEvents",
-                RutaEngine.PARAM_RESOURCE_PATHS, rutaResourcesDir),
+                RutaEngine.PARAM_RESOURCE_PATHS, rutaResourcesDirectory.toString()),
             AnalysisEngineFactory.createEngineDescription(
                 XmiWriter.class,
                 XmiWriter.PARAM_TARGET_LOCATION, outputDirectory.toString(),

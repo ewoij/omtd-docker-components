@@ -14,7 +14,7 @@
       <public>false</public>
     </identificationInfo>
     <versionInfo>
-      <version>2.0.0</version>
+      <version>3.0.0</version>
     </versionInfo>
     <contactInfo>
       <contactPoint>jonas.berdoz@gmail.com</contactPoint>
@@ -27,7 +27,7 @@
     <distributionInfos>
       <componentDistributionInfo>
         <componentDistributionForm>dockerImage</componentDistributionForm>
-        <distributionLocation>ewoij/item-event-annotator:2.0.0</distributionLocation>
+        <distributionLocation>ewoij/item-event-annotator:3.0.0</distributionLocation>
         <command>annotates</command>
       </componentDistributionInfo>
     </distributionInfos>

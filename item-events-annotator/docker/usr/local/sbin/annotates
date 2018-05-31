@@ -9,8 +9,6 @@ p.add_argument('--input', required=True, dest="input_dir")
 p.add_argument('--output', required=True, dest="output_dir")
 args = p.parse_args()
 
-# directory containing annotators
-os.chdir('/usr/local')
-
 # execute annotator
-os.system('java -jar *-standalone.jar "{}" "{}"'.format(args.input_dir, args.output_dir))
+ruta_resources_dir = '/usr/local/ruta_resources'
+os.system('java -jar /usr/local/*-standalone.jar "{}" "{}" "{}"'.format(args.input_dir, args.output_dir, ruta_resources_dir))
